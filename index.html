@@ -2,21 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        body {
-          font-family: monospace
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pramukha Nayak</title>
     <meta name="description"
         content="Pramukha Nayak">
     <meta name="author" content="Pramukha Nayak">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Update the @font-face declaration to use Press Start 2P font from Google Fonts */
+        @font-face {
+            font-family: 'Press Start 2P';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+        }
 
+        /* Apply Press Start 2P font to all elements */
+        html { 
+            background: #111;
+            padding: 1em;
+            font-family: 'Press Start 2P', sans-serif;
+            color: #eee;
+            font-size: 1em;
+            line-height: 1;
+            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+            letter-spacing: 0.125em;
+            animation-duration: 0.01s;
+            animation-name: textflicker;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        h1 { 
+            font-size: 5em; 
+        }
+
+        @keyframes textflicker {
+            from {
+                text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+            }
+            to {
+                text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+            }
+        }
+    </style>
+</head>
 <body>
-    <div><h1>Hello, I am Pramukha R Nayak</h1><br/>
-    I am currently a MSc Neuroscience student at the Albert Ludwig University of Freiburg<br/><br/>
-    Contact me: pramukha[dot]nayak[at]students[dot]uni-freiburg[dot]de
-    </div>
+    <h1>Pramukha Nayak</h1>
+    <h2>MSc Neuroscience student, Albert-Ludwigs-Universität Freiburg</h2>
+    <br>
+    <h3>contact me: pramukha.nayak@students.uni-freiburg.de</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>as always, under construction. </p>
 </body>
 </html>
